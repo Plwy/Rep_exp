@@ -1,4 +1,3 @@
-
 ### 重参数化验证实验
 
 1.conv_bn 融合
@@ -35,4 +34,3 @@ python avg_pool_tran.py
 ```
 python conv_tran.py
 ```
-yoyo
