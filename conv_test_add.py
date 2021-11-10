@@ -27,8 +27,6 @@ def conv_1x3_add_3x3(x):
     print('ori_output shape:',ori_output.shape )
 
     conv_merge = nn.Conv2d(in_channels=3, out_channels=4, kernel_size=(3,3), padding=[1,1], padding_mode='zeros') 
-    # conv_merge = nn.Conv2d(in_channels=3, out_channels=4, kernel_size=(3,3)) 
-
 
     weight_1x3 = conv_1x3.weight.data # (4,3,1,3)
     weight_3x3 = conv_3x3.weight.data # (4,3,3,3)

@@ -14,6 +14,9 @@ def conv_bn_fusion(x):
     nn.init.uniform_(bn.running_var, 0, 0.1)
     nn.init.uniform_(bn.weight, 0, 0.1)
     nn.init.uniform_(bn.bias, 0, 0.1)
+    conv_3x3.eval()
+    bn.eval()
+
     sep_output = bn(conv_3x3(x))
     print('sepout', sep_output.shape)
 
