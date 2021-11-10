@@ -36,3 +36,10 @@ python avg_pool_tran.py
 ```
 python conv_tran.py
 ```
+
+7.
+推理时去除残差连接.
+ratio=0时,repblock和rmblock并不等价.
+```
+python RMNet_exp.py
+```
