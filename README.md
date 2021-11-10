@@ -1,5 +1,3 @@
-
-
 ### 重参数化验证实验
 
 1.conv_bn 融合
@@ -36,6 +34,7 @@ python avg_pool_tran.py
 ```
 python conv_tran.py
 ```
+<<<<<<< HEAD
 
 7.
 推理时去除残差连接.
@@ -43,3 +42,5 @@ ratio=0时,repblock和rmblock并不等价.
 ```
 python RMNet_exp.py
 ```
+=======
+>>>>>>> 63d70225f06afb7b0cd4055ddd8aca92d6ead5b5
